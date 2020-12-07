@@ -5,6 +5,7 @@ import "firebase/auth";
 import "firebase/analytics";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 import ChatMessage from "./ChatMessage";
+import sendIcon from '../send.png'
 
 const firestore = firebase.firestore();
 const auth = firebase.auth();
@@ -47,11 +48,11 @@ const ChatRoom = () => {
         <input
           value={formValue}
           onChange={(e) => setFormValue(e.target.value)}
-          placeholder="say something what you want"
+          placeholder="Say Hello..."
         />
 
         <button type="submit" disabled={!formValue}>
-          🕊️
+          <img src={sendIcon} />
         </button>
       </form>
     </>

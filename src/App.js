@@ -12,8 +12,6 @@ import SignIn from './components/SignIn';
 import ChatRoom from './components/ChatRoom';
 
 const auth = firebase.auth();
-const firestore = firebase.firestore();
-const analytics = firebase.analytics();
 
 
 function App() {
@@ -23,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>⚛️🔥💬</h1>
+        <h2>⚛️ React + 🔥 Firestore = 💬 Realtime Chat</h2>
         <SignOut />
       </header>
 
